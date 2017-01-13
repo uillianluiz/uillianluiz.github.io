@@ -1,0 +1,92 @@
+#wrapper {
+  color: #fff;
+  font-family: 'Play', sans-serif; }
+  #wrapper .container {
+    height: 100%; }
+  #wrapper > div:nth-child(even) {
+    background-color: #337ab7; }
+  #wrapper > div:nth-child(odd) {
+    background-color: #2b87d7; }
+  #wrapper #home {
+    height: 200px;
+    display: none; }
+    #wrapper #home .inner {
+      display: flex;
+      justify-content: center; }
+      #wrapper #home .inner .text {
+        text-align: center;
+        align-self: center;
+        text-transform: uppercase; }
+        #wrapper #home .inner .text .name {
+          font-size: 32px;
+          font-weight: 400;
+          padding: 15px;
+          margin: 0 auto;
+          border-radius: 5px;
+          text-shadow: 10px 10px 10px #333;
+          /*&:hover {
+            cursor: pointer;
+            border: 5px solid $fontColor;
+            padding: 13px;
+          }*/ }
+        #wrapper #home .inner .text .separator {
+          font-size: 1rem;
+          margin-top: 10px;
+          letter-spacing: 5px; }
+        #wrapper #home .inner .text .position {
+          margin-top: 10px;
+          font-size: 1.96rem;
+          letter-spacing: 3px; }
+        #wrapper #home .inner .text .play {
+          margin-top: 10px;
+          font-size: 50px; }
+          #wrapper #home .inner .text .play a {
+            text-decoration: none;
+            color: #fff; }
+            #wrapper #home .inner .text .play a:hover {
+              cursor: pointer;
+              color: #cccccc; }
+  #wrapper #about {
+    padding: 20px;
+    margin-top: 0px;
+    height: 100%; }
+    #wrapper #about .inner {
+      display: flex;
+      justify-content: center; }
+      #wrapper #about .inner img {
+        margin-bottom: 15px; }
+      #wrapper #about .inner .info {
+        text-align: center;
+        color: #fff; }
+        #wrapper #about .inner .info .title {
+          font-size: 3rem;
+          width: 100%;
+          text-align: center;
+          border-top: solid 1px;
+          border-bottom: solid 1px; }
+        #wrapper #about .inner .info .details {
+          font-size: 2rem;
+          width: 100%;
+          text-align: left; }
+
+/*
+#wrapper .container .row .section-title h2 {
+  text-align: left;
+  font-size: 1em;
+  font-weight: 700;
+}*/
+/*
+
+#wrapper #about #about-list{}
+#wrapper #about #about-list .about-line:hover{cursor: pointer;}
+#wrapper #about #about-list .about-line:hover > .skills{display: block;}
+#wrapper #about .highlight { font-weight: 800; }
+#wrapper #about .skill { margin: 0 2px; font-weight: 400;}
+#wrapper #about .skill:after { content: ','; }
+#wrapper #about .skill:last-child:after { content: ''; }
+
+#wrapper #work img{width:100%;}
+#wrapper #work .work-item{margin-bottom: 40px}
+ */
+
+/*# sourceMappingURL=style.css.map */
