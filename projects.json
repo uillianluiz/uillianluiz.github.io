@@ -1,6 +1,57 @@
 {
   "projects": [
     {
+      "name": "FreeCodeCamp Front-End",
+      "description": "Front-end applications developed for the FreeCodeCamp Front End Development Certification.",
+      "images": [
+        {
+          "image": "ffc_front_twitch.png",
+          "description": "Application that allows to view streamers status on Twitch. <a href='http://codepen.io/uillianluiz/full/rjVGYd/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_simon.png",
+          "description": "Web application that simulates the game simon. <a href='http://codepen.io/uillianluiz/full/NdNbrJ/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_calculator.png",
+          "description": "Application that simulates a real electronic calculator. <a href='http://codepen.io/uillianluiz/full/rjVQYb/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_tictactoe.png",
+          "description": "TicTacToe game that implements different artificial intelligences, including Minimax.  <a href='https://uillianluiz.github.io/fcc-tictactoe/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_pomodoro.png",
+          "description": "Pomodoro clock, which allows user to personalize the work and break time.  <a href='http://codepen.io/uillianluiz/full/wgMyaO/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_wikipedia.png",
+          "description": "Application that uses the Wikipedia API to search content.  <a href='http://codepen.io/uillianluiz/full/QdbgKm/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_weather.png",
+          "description": "Application that shows the local weather, using weather API and geolocation.  <a href='http://codepen.io/uillianluiz/full/xgbEdP/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_quotes.png",
+          "description": "Application that generates a random quote each time it is reloaded.  <a href='https://codepen.io/uillianluiz/full/NdKqmE/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_front_tribute.png",
+          "description": "Tribute page made with bootstrap.  <a href='http://codepen.io/uillianluiz/full/YpmJZp/' target='_blank'>View it here</a>"
+        }
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "jQuery",
+        "SCSS",
+        "APIs"
+      ]
+    },
+    {
       "name": "Mundo Brasfoot",
       "description": "Fan based web-site for a game called Brasfoot, which had more than 100 thousand unique views per month and more 1.4 million downloads of auxiliary programs for the game.",
       "images": [
@@ -26,13 +77,14 @@
         "PHP",
         "CSS",
         "JavaScript",
+        "SEO",
         "MySQL",
         "VB.NET"
       ]
     },
     {
       "name": "ÔnibusRS",
-      "description": "Web application for intercity bus search, which was made as part of the final project at UNIPAMPA.",
+      "description": "Web application for intercity bus search, which was made as part of the final undergraduate project at UNIPAMPA.",
       "images": [
         {
           "image": "onibusrs_web.png",
