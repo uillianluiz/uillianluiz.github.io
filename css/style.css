@@ -67,6 +67,12 @@
           font-size: 2rem;
           width: 100%;
           text-align: left; }
+          #wrapper #about .inner .info .details a {
+            color: #fff;
+            text-decoration: none; }
+            #wrapper #about .inner .info .details a:hover {
+              text-decoration: none;
+              color: #cccccc; }
   #wrapper #portfolio {
     display: none;
     padding: 20px; }
@@ -89,6 +95,10 @@
         width: 100%; }
       #wrapper #contact .inner form {
         margin-top: 10px; }
+        #wrapper #contact .inner form .error {
+          border: solid 2px #a94442; }
+        #wrapper #contact .inner form .success {
+          border: solid 2px #3c763d; }
       #wrapper #contact .inner .details {
         text-align: center; }
         #wrapper #contact .inner .details ul li {

@@ -98,6 +98,14 @@ $fontShadowColor: #333;
           font-size: 2rem;
           width: 100%;
           text-align: left;
+          a{
+            color: $fontColor;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+              color: darken($fontColor, 20%);
+            }
+          }
         }
       }
     }
@@ -133,6 +141,12 @@ $fontShadowColor: #333;
       }
       form {
         margin-top: 10px;
+        .error{
+          border: solid 2px #a94442;
+        }
+        .success{
+          border: solid 2px #3c763d;
+        }
       }
       .details {
         text-align: center;

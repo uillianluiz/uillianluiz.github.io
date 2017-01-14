@@ -66,22 +66,34 @@ function printPortfolio() {
                 </div>';
             $("#projects").append(html);
 
-            if((i+1) % 3 == 0){
-                $("#projects").append("<div class='clearfix'></div>");
+            if ((i + 1) % 3 == 0) {
+                $("#projects").append("<div class='clearfix hidden-sm hidden-xs'></div>");
+            }else if ((i + 1) % 2 == 0) {
+                $("#projects").append("<div class='clearfix hidden-xs hidden-md hidden-lg'></div>");
             }
         }
-
     });
 }
 
 
 function validateForm() {
-    if ($("#name").val() == "") {
-        $("#name").focus();
-        return false;
-    } else if ($("#email").val() == "") {
-        $("#email").focus();
-        return false;
+    function checkInput(id) {
+        $(id).removeClass("error");
+        $(id).removeClass("success");
+        if ($(id).val() == "") {
+            $(id).focus();
+            $(id).addClass("error");
+            return false;
+        } else {
+            $(id).addClass("success");
+            return true;
+        }
     }
-    return true;
+
+    var name = checkInput("#name");
+    var email = checkInput("#email");
+    var message = checkInput("#message");
+
+    var ret = name && email && message;
+    return ret;
 }
