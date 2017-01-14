@@ -28,12 +28,7 @@
           padding: 15px;
           margin: 0 auto;
           border-radius: 5px;
-          text-shadow: 10px 10px 10px #333;
-          /*&:hover {
-            cursor: pointer;
-            border: 5px solid $fontColor;
-            padding: 13px;
-          }*/ }
+          text-shadow: 10px 10px 10px #333; }
         #wrapper #home .inner .text .separator {
           font-size: 1rem;
           margin-top: 10px;
@@ -45,10 +40,10 @@
         #wrapper #home .inner .text .play {
           margin-top: 10px;
           font-size: 50px; }
-          #wrapper #home .inner .text .play a {
+          #wrapper #home .inner .text .play span {
             text-decoration: none;
             color: #fff; }
-            #wrapper #home .inner .text .play a:hover {
+            #wrapper #home .inner .text .play span:hover {
               cursor: pointer;
               color: #cccccc; }
   #wrapper #about {
@@ -109,25 +104,5 @@
       @media screen and (max-width: 400px) {
         #wrapper #contact .inner .details {
           margin-left: -40px; } }
-
-/*
-#wrapper .container .row .section-title h2 {
-  text-align: left;
-  font-size: 1em;
-  font-weight: 700;
-}*/
-/*
-
-#wrapper #about #about-list{}
-#wrapper #about #about-list .about-line:hover{cursor: pointer;}
-#wrapper #about #about-list .about-line:hover > .skills{display: block;}
-#wrapper #about .highlight { font-weight: 800; }
-#wrapper #about .skill { margin: 0 2px; font-weight: 400;}
-#wrapper #about .skill:after { content: ','; }
-#wrapper #about .skill:last-child:after { content: ''; }
-
-#wrapper #work img{width:100%;}
-#wrapper #work .work-item{margin-bottom: 40px}
- */
 
 /*# sourceMappingURL=style.css.map */

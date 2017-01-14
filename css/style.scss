@@ -23,10 +23,7 @@ $fontShadowColor: #333;
 
   #home {
     height: 999px;
-    //display: none;
     .inner {
-      //min-height: 100%;
-      //height: 100%;
       display: flex;
       justify-content: center;
       .text {
@@ -40,20 +37,13 @@ $fontShadowColor: #333;
         .content{
           display: none;
         }
-
         .name {
           font-size: 32px;
           font-weight: 400;
-          //border: 3px solid $fontColor;
           padding: 15px;
           margin: 0 auto;
           border-radius: 5px;
           text-shadow: 10px 10px 10px $fontShadowColor;
-          /*&:hover {
-            cursor: pointer;
-            border: 5px solid $fontColor;
-            padding: 13px;
-          }*/
         }
 
         .separator {
@@ -71,7 +61,7 @@ $fontShadowColor: #333;
         .play {
           margin-top: 10px;
           font-size: 50px;
-          a {
+          span {
             text-decoration: none;
             color: $fontColor;
             &:hover {
@@ -87,8 +77,6 @@ $fontShadowColor: #333;
     display: none;
     padding: 20px;
     .inner {
-      //min-height: 100%;
-      //height: 100%;
       display: flex;
       justify-content: center;
 
@@ -170,24 +158,3 @@ $fontShadowColor: #333;
     }
   }
 }
-
-/*
-#wrapper .container .row .section-title h2 {
-  text-align: left;
-  font-size: 1em;
-  font-weight: 700;
-}*/
-
-/*
-
-#wrapper #about #about-list{}
-#wrapper #about #about-list .about-line:hover{cursor: pointer;}
-#wrapper #about #about-list .about-line:hover > .skills{display: block;}
-#wrapper #about .highlight { font-weight: 800; }
-#wrapper #about .skill { margin: 0 2px; font-weight: 400;}
-#wrapper #about .skill:after { content: ','; }
-#wrapper #about .skill:last-child:after { content: ''; }
-
-#wrapper #work img{width:100%;}
-#wrapper #work .work-item{margin-bottom: 40px}
- */

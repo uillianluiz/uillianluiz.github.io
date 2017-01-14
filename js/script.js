@@ -14,7 +14,7 @@ $(document).ready(function () {
         positionHome();
     });
 
-    $(".play a").click(function () {
+    $(".play span").click(function () {
         $('html, body').animate({
             scrollTop: $("#about").offset().top
         }, 1300);
