@@ -22,6 +22,17 @@ $(document).ready(function () {
     printPortfolio();
 });
 
+window.onload = function () {
+    setTimeout(function () {
+        $(".loading").fadeOut(function () {
+            $(".content").fadeIn();
+            $("#about").fadeIn();
+            $("#portfolio").fadeIn();
+            $("#contact").fadeIn();
+        });
+    }, 1000);
+}
+
 function getUniqueName(name) {
     return name.toLowerCase().split(" ").join();
 }
@@ -59,14 +70,7 @@ function printPortfolio() {
                 $("#projects").append("<div class='clearfix'></div>");
             }
         }
-        setTimeout(function(){
-            $(".loading").fadeOut(function(){
-                $(".content").fadeIn();
-                $("#about").fadeIn();
-                $("#portfolio").fadeIn();
-                $("#contact").fadeIn();
-            });
-        }, 3000);
+
     });
 }
 
