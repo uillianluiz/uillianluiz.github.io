@@ -1,0 +1,111 @@
+{
+  "projects": [
+    {
+      "name": "Mundo Brasfoot",
+      "description": "Fan based web-site for a game called Brasfoot, which had more than 100 thousand unique views per month and more 1.4 million downloads of auxiliary programs for the game.",
+      "images": [
+        {
+          "image": "web_mundobf_2014.png",
+          "description": "Front page of the Wordpress blog, which had more than 100k unique views per month during 2009-1014."
+        },
+        {
+          "image": "vb_hack.png",
+          "description": "VB.NET application to help players to modify their game state."
+        },
+        {
+          "image": "vb_points-skins.png",
+          "description": "VB.NET application that modified the skin of the game."
+        },
+        {
+          "image": "vb_verificador-patches.png",
+          "description": "VB.NET application that searched for duplicated teams in the game."
+        }
+      ],
+      "skills": [
+        "Wordpress",
+        "PHP",
+        "CSS",
+        "JavaScript",
+        "MySQL",
+        "VB.NET"
+      ]
+    },
+    {
+      "name": "ÔnibusRS",
+      "description": "Web application for intercity bus search, which was made as part of the final project at UNIPAMPA.",
+      "images": [
+        {
+          "image": "onibusrs_web.png",
+          "description": "Main page of the web application which allows users to search for intercity buses in the Brazilian state of Rio Grande do Sul."
+        },
+        {
+          "image": "onibusrs_android.png",
+          "description": "Android application."
+        },
+        {
+          "image": "onibusrs_ios.jpg",
+          "description": "iOS application."
+        }
+      ],
+      "skills": [
+        "PHP",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "Python",
+        "Android",
+        "iOS"
+      ]
+    },
+    {
+      "name": "Web System CSB",
+      "description": "Web application made for a clinic, which allowed administrators to manage patients history.",
+      "images": [
+        {
+          "image": "web_csb.png",
+          "description": "Login page of the system."
+        }
+      ],
+      "skills": [
+        "PHP",
+        "CSS",
+        "JavaScript",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Wordpress for UFPel",
+      "description": "Wordpress websites for the graduation program and for a research group at UFPel.",
+      "images": [
+        {
+          "image": "web_ppgg.png",
+          "description": "Front page of the Graduation program in Geography at UFPel."
+        },{
+          "image": "web_leagef.png",
+          "description": "Front page of the research group of Geography at UFPel."
+        }
+      ],
+      "skills": [
+        "PHP",
+        "CSS",
+        "JavaScript",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Netto & Junior",
+      "description": "Website for a local band, providing agenda and media gallery.",
+      "images": [
+        {
+          "image": "web_netto&junior.png",
+          "description": "Front page of website for Netto & Junior."
+        }
+      ],
+      "skills": [
+        "PHP",
+        "JavaScript",
+        "MySQL"
+      ]
+    }
+  ]
+}

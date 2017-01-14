@@ -9,11 +9,14 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Overpass+Mono|Patua+One|Play" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"
+            type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
 
 </head>
@@ -23,28 +26,35 @@
     <div id="home">
         <div class="inner container">
             <div class="text">
-                <div class="name">Uillian Ludwig</div>
-                <div class="separator">
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
+
+                <div class="loading">
+                    <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
                 </div>
-                <div class="position">Full-stack Web Developer</div>
-                <div class="separator">
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                </div>
-                <div class="play">
-                    <a href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                <div class="content">
+                    <div class="name">Uillian Ludwig</div>
+                    <div class="separator">
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="position">Full-stack Web Developer</div>
+                    <div class="separator">
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        <i class="fa fa-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="play">
+                        <a href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,16 +77,96 @@
                             </li>
                         </ul>
                     </div>
-                    <span class="title">Work</span>
-                    <div class="details">
-                        <ul>
-                            <li>Nothing to list.</li>
-                        </ul>
-                    </div>
                     <span class="title">Certifications</span>
                     <div class="details">
                         <ul>
                             <li>2017 - Front End Development at FreeCodeCamp.</li>
+                        </ul>
+                    </div>
+
+                    <span class="title">Skills</span>
+                    <div class="details">
+                        <ul>
+                            <li>Programming languages:</li>
+                            <ul>
+                                <li>Javascript (Node.js, Express, npm)</li>
+                                <li>Front-End Web (HTML, CSS, Bootstrap, SCSS, jQuery)</li>
+                                <li>PHP (Wordpress)</li>
+                                <li>C (OpenMP, OpenMPI)</li>
+                                <li>Python</li>
+                                <li>VB.NET</li>
+                                <li>Mobile Development (Android)</li>
+                            </ul>
+                            <li>Databases: MySQL, PostgreSQL, SQLite, MongoDB</li>
+                            <li>Writing: Portuguese, English</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="portfolio">
+        <div class="inner container">
+            <div class="row title">
+                My Portfolio
+            </div>
+            <div class="row" id="projects">
+
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="inner container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <span class="title">Email me:</span>
+                    <form class="form-horizontal" role="form" method="post"
+                          action="https://formspree.io/uillianludwig@gmail.com">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" name="name"
+                                       placeholder="First & Last Name" value="" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email"
+                                       placeholder="example@domain.com" value="" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="4" name="message" required="true"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <span class="title">Social Networks:</span>
+                    <div class="details">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/uillian/" target="_blank"><i
+                                    class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/Uillian" target="_blank"><i
+                                    class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/uillian" target="_blank"><i class="fa fa-twitter-square"
+                                                                                         aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="https://github.com/uillianluiz" target="_blank"><i class="fa fa-github-square"
+                                                                                            aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="https://www.freecodecamp.com/uillianluiz" target="_blank"><i
+                                    class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,15 +174,6 @@
         </div>
     </div>
 </div>
-
-<!--
-<div class="home  bg-primary">
-    <div class="center">
-        <span class="name">Uillian Ludwig</span>
-
-    </div>
-</div>
--->
 
 </body>
 </html>
