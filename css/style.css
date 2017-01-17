@@ -133,6 +133,7 @@
     #sidenavWrapper #openSideNav {
       background-color: #2b87d7;
       border-radius: 6px;
+      padding: 0px;
       margin-left: 5px; } }
   @media screen and (max-height: 450px) {
     #sidenavWrapper #sidenav {
