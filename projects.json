@@ -139,6 +139,14 @@
         {
           "image": "web_csb.png",
           "description": "Login page of the system."
+        },
+        {
+          "image": "web_csb2.png",
+          "description": "Internal menu page of the system."
+        },
+        {
+          "image": "web_csb3.png",
+          "description": "Internal company registration page of the system."
         }
       ],
       "skills": [
