@@ -31,10 +31,10 @@ $fontShadowColor: #333;
         align-self: center;
         text-transform: uppercase;
 
-        .loading{
+        .loading {
           font-size: 5rem;
         }
-        .content{
+        .content {
           display: none;
         }
         .name {
@@ -98,10 +98,10 @@ $fontShadowColor: #333;
           font-size: 2rem;
           width: 100%;
           text-align: left;
-          a{
+          a {
             color: $fontColor;
             text-decoration: none;
-            &:hover{
+            &:hover {
               text-decoration: none;
               color: darken($fontColor, 20%);
             }
@@ -141,10 +141,10 @@ $fontShadowColor: #333;
       }
       form {
         margin-top: 10px;
-        .error{
+        .error {
           border: solid 2px #a94442;
         }
-        .success{
+        .success {
           border: solid 2px #3c763d;
         }
       }
@@ -173,7 +173,7 @@ $fontShadowColor: #333;
   }
 }
 
-#sidenavWrapper{
+#sidenavWrapper {
   display: none;
   #openSideNav {
     background-color: transparent;
@@ -184,15 +184,27 @@ $fontShadowColor: #333;
     top: 20px;
     font-size: 32px;
     z-index: 999;
-    &:hover{
+    &:hover {
       cursor: pointer;
       color: darken($fontColor, 20%);
     }
   }
+  @media (max-width: 768px) {
+    #openSideNav {
+      background-color: $bgColorOdd;
+      border-radius: 6px;
+
+      margin-left: 5px;
+    }
+  }
 
   @media screen and (max-height: 450px) {
-    #sidenav {padding-top: 15px;}
-    #sidenav a {font-size: 18px;}
+    #sidenav {
+      padding-top: 15px;
+    }
+    #sidenav a {
+      font-size: 18px;
+    }
   }
 
   #sidenav {
@@ -208,21 +220,21 @@ $fontShadowColor: #333;
     transition: 0.5s;
     border-right: solid 0px $fontColor;
 
-    .nav-list{
+    .nav-list {
       margin-right: 3px;
-      &.active{
+      &.active {
         color: #234663;
       }
     }
 
-    a {
+    a, #closeSideNav {
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
       color: $fontColor;
       display: block;
       transition: 0.3s;
-      &:hover, .offcanvas &:focus{
+      &:hover, .offcanvas &:focus {
         cursor: pointer;
         color: darken($fontColor, 20%);
       }

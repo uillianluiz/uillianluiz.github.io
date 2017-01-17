@@ -129,6 +129,11 @@
     #sidenavWrapper #openSideNav:hover {
       cursor: pointer;
       color: #cccccc; }
+  @media (max-width: 768px) {
+    #sidenavWrapper #openSideNav {
+      background-color: #2b87d7;
+      border-radius: 6px;
+      margin-left: 5px; } }
   @media screen and (max-height: 450px) {
     #sidenavWrapper #sidenav {
       padding-top: 15px; }
@@ -150,14 +155,14 @@
       margin-right: 3px; }
       #sidenavWrapper #sidenav .nav-list.active {
         color: #234663; }
-    #sidenavWrapper #sidenav a {
+    #sidenavWrapper #sidenav a, #sidenavWrapper #sidenav #closeSideNav {
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
       color: #fff;
       display: block;
       transition: 0.3s; }
-      #sidenavWrapper #sidenav a:hover, .offcanvas #sidenavWrapper #sidenav a:focus {
+      #sidenavWrapper #sidenav a:hover, .offcanvas #sidenavWrapper #sidenav a:focus, #sidenavWrapper #sidenav #closeSideNav:hover, .offcanvas #sidenavWrapper #sidenav #closeSideNav:focus {
         cursor: pointer;
         color: #cccccc; }
     #sidenavWrapper #sidenav #closeSideNav {
