@@ -20,6 +20,71 @@ $(document).ready(function () {
         }, 1300);
     });
     printPortfolio();
+
+    /* side bar */
+    $("#openSideNav").click(function(){
+        $("#sidenav").css("width", "250px");
+        $("#sidenav").css("border-width", "2px");
+    });
+
+    $("#closeSideNav").click(function(){
+        $("#sidenav").css("width", "0");
+        $("#sidenav").css("border-width", "0");
+    });
+
+    $("#homeSideNav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1300);
+    });
+    $("#aboutSideNav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 1300);
+    });
+    $("#portfolioSideNav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 1300);
+    });
+    $("#contactSideNav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 1300);
+    });
+
+     menuItems = $("#sidenav").find(".nav-list");
+     scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) {
+            return item;
+        }
+    });
+    isMenuSet=true;
+});
+
+var menuItems, scrollItems, isMenuSet=false;
+
+$(window).scroll(function () {
+    if(!isMenuSet) return;
+    var fromTop = $(this).scrollTop() + 150;
+
+    var cur = scrollItems.map(function () {
+        if ($(this).offset().top < fromTop)
+            return this;
+    });
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "home";
+
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        id = "contact";
+    }
+
+    $("#sidenav").find(".nav-list").each(function(x, item){
+        $(item).removeClass("active").filter("[href='#" + id + "']").addClass("active");
+    })
+
+
 });
 
 window.onload = function () {
@@ -29,6 +94,7 @@ window.onload = function () {
             $("#about").fadeIn();
             $("#portfolio").fadeIn();
             $("#contact").fadeIn();
+            $("#sidenavWrapper").fadeIn();
         });
     }, 1000);
 }

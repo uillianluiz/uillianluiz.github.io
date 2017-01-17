@@ -172,3 +172,67 @@ $fontShadowColor: #333;
     }
   }
 }
+
+#sidenavWrapper{
+  display: none;
+  #openSideNav {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: 20px;
+    position: fixed;
+    top: 20px;
+    font-size: 32px;
+    z-index: 999;
+    &:hover{
+      cursor: pointer;
+      color: darken($fontColor, 20%);
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    #sidenav {padding-top: 15px;}
+    #sidenav a {font-size: 18px;}
+  }
+
+  #sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #2b87d7;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-right: solid 0px $fontColor;
+
+    .nav-list{
+      margin-right: 3px;
+      &.active{
+        color: #234663;
+      }
+    }
+
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: $fontColor;
+      display: block;
+      transition: 0.3s;
+      &:hover, .offcanvas &:focus{
+        cursor: pointer;
+        color: darken($fontColor, 20%);
+      }
+    }
+    #closeSideNav {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  }
+}
