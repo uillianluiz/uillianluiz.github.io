@@ -61,6 +61,9 @@ $(document).ready(function () {
         }
     });
     isMenuSet=true;
+
+
+
 });
 
 var menuItems, scrollItems, isMenuSet=false;
@@ -82,7 +85,7 @@ $(window).scroll(function () {
 
     $("#sidenav").find(".nav-list").each(function(x, item){
         $(item).removeClass("active").filter("[href='#" + id + "']").addClass("active");
-    })
+    });
 
 
 });
@@ -97,6 +100,7 @@ window.onload = function () {
             $("#sidenavWrapper").fadeIn();
         });
     }, 1000);
+
 }
 
 function getUniqueName(name) {

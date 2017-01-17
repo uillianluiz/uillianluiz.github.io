@@ -117,6 +117,13 @@ $fontShadowColor: #333;
     .inner {
       text-align: center;
 
+      img{
+        object-fit: cover;
+        object-position: center;
+        max-height: 250px;
+        width: 100%;
+      }
+
       span.btn-default {
         margin-right: 10px;
         margin-bottom: 5px;

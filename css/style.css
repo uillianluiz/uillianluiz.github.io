@@ -78,6 +78,11 @@
     padding: 20px; }
     #wrapper #portfolio .inner {
       text-align: center; }
+      #wrapper #portfolio .inner img {
+        object-fit: cover;
+        object-position: center;
+        max-height: 250px;
+        width: 100%; }
       #wrapper #portfolio .inner span.btn-default {
         margin-right: 10px;
         margin-bottom: 5px; }
