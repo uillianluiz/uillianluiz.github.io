@@ -3,6 +3,11 @@ $bgColorOdd: #2b87d7;
 $fontColor: #fff;
 $fontShadowColor: #333;
 
+body{
+  overflow-x: hidden;
+  background-color: $bgColor;
+}
+
 #wrapper {
   color: $fontColor;
   font-family: 'Play', sans-serif;

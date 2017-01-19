@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     /* side bar */
     $("#openSideNav").click(function(){
-        $("#sidenav").css("width", "250px");
+        $("#sidenav").css("width", "200px");
         $("#sidenav").css("border-width", "2px");
     });
 

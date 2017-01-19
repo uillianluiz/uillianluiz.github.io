@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+  background-color: #337ab7; }
+
 #wrapper {
   color: #fff;
   font-family: 'Play', sans-serif; }
