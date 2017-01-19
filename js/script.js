@@ -145,7 +145,6 @@ function printPortfolio() {
     });
 }
 
-
 function validateForm() {
     function checkInput(id) {
         $(id).removeClass("error");
@@ -167,3 +166,4 @@ function validateForm() {
     var ret = name && email && message;
     return ret;
 }
+

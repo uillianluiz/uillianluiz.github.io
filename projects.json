@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "name": "FCC Data Visualization",
+      "description": "Data visualization applications developed with ReactJS and D3.js for the Data Visualization certification.",
+      "images": [
+        {
+          "image": "fcc_data_recipes.png",
+          "description": "ReactJS application that allows to view, edit and search recipes. <a href='http://codepen.io/uillianluiz/full/EZNoxo/' target='_blank'>View it here</a>"
+        },{
+          "image": "fcc_data_leaderboard.png",
+          "description": "ReactJS application that retrieves a leaderboard info and display in the screen. <a href='http://codepen.io/uillianluiz/full/egdRVv/' target='_blank'>View it here</a>"
+        },{
+          "image": "fcc_data_markdown.png",
+          "description": "ReactJS application for editing and visualizing markdown text. <a href='http://codepen.io/uillianluiz/full/pREoMw/' target='_blank'>View it here</a>"
+        }
+      ],
+      "skills": [
+        "React.js",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "SCSS"
+      ]
+    },
+    {
       "name": "FreeCodeCamp Front-End",
       "description": "Front-end applications developed for the FreeCodeCamp Front End Development Certification.",
       "images": [
@@ -42,12 +66,12 @@
         }
       ],
       "skills": [
+        "Bootstrap",
+        "JavaScript",
         "HTML",
         "CSS",
-        "JavaScript",
-        "Bootstrap",
-        "jQuery",
         "SCSS",
+        "jQuery",
         "APIs"
       ]
     },
@@ -76,10 +100,10 @@
         "Wordpress",
         "PHP",
         "CSS",
+        "VB.NET",
         "JavaScript",
         "SEO",
-        "MySQL",
-        "VB.NET"
+        "MySQL"
       ]
     },
     {
