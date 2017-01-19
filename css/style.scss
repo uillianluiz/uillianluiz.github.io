@@ -124,9 +124,15 @@ body{
 
       img{
         object-fit: cover;
-        object-position: center;
+        object-position: top;
         max-height: 250px;
+        height: 250px;
         width: 100%;
+      }
+      .caption{
+        h3{
+          margin-top: 10px;
+        }
       }
 
       span.btn-default {

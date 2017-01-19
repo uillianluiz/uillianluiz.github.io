@@ -108,7 +108,7 @@
     },
     {
       "name": "ÔnibusRS",
-      "description": "Web application for intercity bus search, which was made as part of the final undergraduate project at UNIPAMPA.",
+      "description": "Application for intercity bus search made as part of the final undergraduate project at UNIPAMPA.",
       "images": [
         {
           "image": "onibusrs_web.png",
@@ -153,7 +153,8 @@
       "skills": [
         "Android",
         "Java",
-        "Unity"
+        "Unity",
+        "Google Game Services"
       ]
     },
     {
