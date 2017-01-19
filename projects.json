@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "FCC Data Visualization",
-      "description": "Data visualization applications developed with ReactJS and D3.js for the Data Visualization certification.",
+      "name": "FreeCodeCamp React",
+      "description": "Reactapplications developed with ReactJS for the Data Visualization certification.",
       "images": [
         {
           "image": "fcc_data_recipes.png",
