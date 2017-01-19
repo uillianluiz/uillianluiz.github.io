@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "FreeCodeCamp React",
-      "description": "Reactapplications developed with ReactJS for the Data Visualization certification.",
+      "description": "React applications developed with ReactJS for the Data Visualization certification.",
       "images": [
         {
           "image": "fcc_data_recipes.png",
