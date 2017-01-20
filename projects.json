@@ -1,12 +1,12 @@
 {
   "projects": [
     {
-      "name": "FreeCodeCamp React",
+      "name": "FreeCodeCamp ReactJS",
       "description": "Applications developed with ReactJS for the FreeCodeCamp Data Visualization certification.",
       "images": [
         {
           "image": "fcc_data_gameoflife.png",
-          "description": "ReactJS Game of Life. It allows to start, stop, change sizes and more. <a href='http://codepen.io/uillianluiz/full/ZLLvWL/' target='_blank'>View it here</a>"
+          "description": "ReactJS Game of Life. It allows to start, stop, change sizes, speed and more. <a href='http://codepen.io/uillianluiz/full/ZLLvWL/' target='_blank'>View it here</a>"
         },
         {
           "image": "fcc_data_recipes.png",
@@ -20,17 +20,17 @@
         }
       ],
       "skills": [
-        "React.js",
-        "HTML",
-        "CSS",
+        "ReactJS",
         "JavaScript",
-        "Bootstrap",
-        "SCSS"
+        "JSX",
+        "Babel",
+        "SCSS",
+        "Bootstrap"
       ]
     },
     {
       "name": "FreeCodeCamp Front-End",
-      "description": "Front-end applications developed for the FreeCodeCamp Front End Development Certification.",
+      "description": "Applications developed for the FreeCodeCamp Front End Development Certification.",
       "images": [
         {
           "image": "ffc_front_twitch.png",
@@ -46,15 +46,15 @@
         },
         {
           "image": "fcc_front_tictactoe.png",
-          "description": "TicTacToe game that implements different artificial intelligences, including Minimax.  <a href='https://uillianluiz.github.io/fcc-tictactoe/' target='_blank'>View it here</a>"
+          "description": "TicTacToe game that implements different artificial intelligences, including Minimax. <a href='https://uillianluiz.github.io/fcc-tictactoe/' target='_blank'>View it here</a>"
         },
         {
           "image": "fcc_front_pomodoro.png",
-          "description": "Pomodoro clock, which allows user to personalize the work and break time.  <a href='http://codepen.io/uillianluiz/full/wgMyaO/' target='_blank'>View it here</a>"
+          "description": "Pomodoro clock, which allows user to personalize the work and break time. <a href='http://codepen.io/uillianluiz/full/wgMyaO/' target='_blank'>View it here</a>"
         },
         {
           "image": "fcc_front_wikipedia.png",
-          "description": "Application that uses the Wikipedia API to search content.  <a href='http://codepen.io/uillianluiz/full/QdbgKm/' target='_blank'>View it here</a>"
+          "description": "Application that uses the Wikipedia API to search Wikipedia entries. <a href='http://codepen.io/uillianluiz/full/QdbgKm/' target='_blank'>View it here</a>"
         },
         {
           "image": "fcc_front_weather.png",
@@ -81,7 +81,7 @@
     },
     {
       "name": "Mundo Brasfoot",
-      "description": "Fan based web-site for a game called Brasfoot, which had more than 100 thousand unique views per month and more than 1.4 million downloads of auxiliary programs for the game.",
+      "description": "Fan based web-site for a game called Brasfoot. It had more than 100 thousand views per month and more than 1.4 million downloads of auxiliary programs.",
       "images": [
         {
           "image": "web_mundobf_2014.png",
@@ -139,7 +139,7 @@
     },
     {
       "name": "UnkApps",
-      "description": "Android games developed in Unity and Java.",
+      "description": "Android games developed in Unity and Java, having achievements and online ranking.",
       "images": [
         {
           "image": "unkapps_tapball.png",
@@ -158,12 +158,13 @@
         "Android",
         "Java",
         "Unity",
+        "SQLite",
         "Google Game Services"
       ]
     },
     {
       "name": "Web System CSB",
-      "description": "Web application made for a clinic, which allowed administrators to manage patients history.",
+      "description": "Web application made for a clinic, which allowed administrators to manage patients history, control appointments, upload exams, and more.",
       "images": [
         {
           "image": "web_csb.png",
@@ -186,19 +187,20 @@
       ]
     },
     {
-      "name": "Wordpress for UFPel",
-      "description": "Wordpress websites for the graduation program and for a research group at UFPel.",
+      "name": "Websites for UFPel",
+      "description": "Websites for the graduation program and for a research group at UFPel.",
       "images": [
         {
           "image": "web_ppgg.png",
-          "description": "Front page of the Graduation program in Geography at UFPel."
+          "description": "Front page of the graduation program in Geography at UFPel."
         },{
           "image": "web_leagef.png",
-          "description": "Front page of the research group of Geography at UFPel."
+          "description": "Front page of the Geography research group at UFPel."
         }
       ],
       "skills": [
         "Wordpress",
+        "CMS",
         "PHP",
         "CSS",
         "JavaScript",
@@ -207,7 +209,7 @@
     },
     {
       "name": "Netto & Junior",
-      "description": "Website for a local band, providing agenda and media gallery.",
+      "description": "Website for a local band, providing agenda, media gallery and web music player.",
       "images": [
         {
           "image": "web_netto&junior.png",
@@ -217,7 +219,9 @@
       "skills": [
         "PHP",
         "JavaScript",
-        "MySQL"
+        "MySQL",
+        "CMS",
+        "CSS"
       ]
     }
   ]

@@ -99,7 +99,7 @@ window.onload = function () {
             $("#contact").fadeIn();
             $("#sidenavWrapper").fadeIn();
         });
-    }, 1000);
+    }, 500);
 
 }
 
