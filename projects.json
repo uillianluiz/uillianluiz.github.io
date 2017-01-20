@@ -29,6 +29,35 @@
       ]
     },
     {
+      "name": "FreeCodeCamp APIs",
+      "description": "APIs applications developed with Express for the FreeCodeCamp Back End certification.",
+      "images": [
+        {
+          "image": "fcc_api_urlshortener.png",
+          "description": "URL shortener microservice, allowing to add, view and view details of shorten urls. <a href='https://ul-url-shortener.herokuapp.com/' target='_blank'>View it here</a>"
+        },
+        {
+          "image": "fcc_api_imgsearch.png",
+          "description": "Image search abstraction layer, which uses a Google API and returns a JSON of images. <a href='https://ul-img-search.herokuapp.com/' target='_blank'>View it here</a>"
+        },{
+          "image": "fcc_api_filemetadata.png",
+          "description": "API that receives a POST of a file, and returns its size in a JSON response. <a href='https://ul-file-metadata.herokuapp.com/' target='_blank'>View it here</a>"
+        },{
+          "image": "fcc_api_timestamp.png",
+          "description": "API that receives a UNIX timestamp or a natural date, and respond with both. <a href='https://ul-timestamp.herokuapp.com/' target='_blank'>View it here</a>"
+        },{
+          "image": "fcc_api_headerrequest.png",
+          "description": "API that returns a JSON with information from the request header. <a href='https://ul-whoami.herokuapp.com/' target='_blank'>View it here</a>"
+        }
+      ],
+      "skills": [
+        "Express",
+        "JavaScript",
+        "MongoDB",
+        "Heroku"
+      ]
+    },
+    {
       "name": "FreeCodeCamp Front-End",
       "description": "Applications developed for the FreeCodeCamp Front End Development Certification.",
       "images": [
