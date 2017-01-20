@@ -2,11 +2,11 @@
   "projects": [
     {
       "name": "FreeCodeCamp React",
-      "description": "React applications developed with ReactJS for the Data Visualization certification.",
+      "description": "Applications developed with ReactJS for the FreeCodeCamp Data Visualization certification.",
       "images": [
         {
           "image": "fcc_data_gameoflife.png",
-          "description": "ReactJS Game of Life. It allows start, stop, change sizes and more. <a href='http://codepen.io/uillianluiz/full/ZLLvWL/' target='_blank'>View it here</a>"
+          "description": "ReactJS Game of Life. It allows to start, stop, change sizes and more. <a href='http://codepen.io/uillianluiz/full/ZLLvWL/' target='_blank'>View it here</a>"
         },
         {
           "image": "fcc_data_recipes.png",
