@@ -5,6 +5,10 @@
       "description": "React applications developed with ReactJS for the Data Visualization certification.",
       "images": [
         {
+          "image": "fcc_data_gameoflife.png",
+          "description": "ReactJS Game of Life. It allows start, stop, change sizes and more. <a href='http://codepen.io/uillianluiz/full/ZLLvWL/' target='_blank'>View it here</a>"
+        },
+        {
           "image": "fcc_data_recipes.png",
           "description": "ReactJS application that allows to view, edit and search recipes. <a href='http://codepen.io/uillianluiz/full/EZNoxo/' target='_blank'>View it here</a>"
         },{
