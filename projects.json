@@ -9,12 +9,18 @@
           "description": "ReactJS Game of Life. It allows to start, stop, change sizes, speed and more. <a href='http://codepen.io/uillianluiz/full/ZLLvWL/' target='_blank'>View it here</a>"
         },
         {
+          "image": "fcc_data_roguelike.png",
+          "description": "ReactJS Roguelike Dungeon Crawler Game. Random generated game, which allows you to play infinitely. <a href='https://uillianluiz.github.io/roguelike/' target='_blank'>Play here</a> or <a href='https://github.com/uillianluiz/roguelike' target='_blank'>View source code here</a>"
+        },
+        {
           "image": "fcc_data_recipes.png",
           "description": "ReactJS application that allows to view, edit and search recipes. <a href='http://codepen.io/uillianluiz/full/EZNoxo/' target='_blank'>View it here</a>"
-        },{
+        },
+        {
           "image": "fcc_data_leaderboard.png",
           "description": "ReactJS application that retrieves a leaderboard info and display in the screen. <a href='http://codepen.io/uillianluiz/full/egdRVv/' target='_blank'>View it here</a>"
-        },{
+        },
+        {
           "image": "fcc_data_markdown.png",
           "description": "ReactJS application for editing and visualizing markdown text. <a href='http://codepen.io/uillianluiz/full/pREoMw/' target='_blank'>View it here</a>"
         }
@@ -39,13 +45,16 @@
         {
           "image": "fcc_api_imgsearch.png",
           "description": "Image search abstraction layer, which uses a Google API and returns a JSON of images. <a href='https://ul-img-search.herokuapp.com/' target='_blank'>View it here</a>"
-        },{
+        },
+        {
           "image": "fcc_api_filemetadata.png",
           "description": "API that receives a POST of a file, and returns its size in a JSON response. <a href='https://ul-file-metadata.herokuapp.com/' target='_blank'>View it here</a>"
-        },{
+        },
+        {
           "image": "fcc_api_timestamp.png",
           "description": "API that receives a UNIX timestamp or a natural date, and respond with both. <a href='https://ul-timestamp.herokuapp.com/' target='_blank'>View it here</a>"
-        },{
+        },
+        {
           "image": "fcc_api_headerrequest.png",
           "description": "API that returns a JSON with information from the request header. <a href='https://ul-whoami.herokuapp.com/' target='_blank'>View it here</a>"
         }
@@ -223,7 +232,8 @@
         {
           "image": "web_ppgg.png",
           "description": "Front page of the graduation program in Geography at UFPel."
-        },{
+        },
+        {
           "image": "web_leagef.png",
           "description": "Front page of the Geography research group at UFPel."
         }
