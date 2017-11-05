@@ -2,13 +2,19 @@
   (touchend)="swipe($event, 'end')">
 
 
-  <div class="back" routerLink="/">
-    <i class="fa fa-times" aria-hidden="true"></i>
+  <div fxHide.gt-xs="true">
+    <div class="col-xs-12">
+      <button class="btn btn-sm btn-block btn-secondary" routerLink="/">Close Project</button>
+    </div>
   </div>
 
-  <div class="row justify-content-center title">
-    <div class="col-xs-12">
+
+  <div class="row justify-content-center  title">
+    <div class="col-xs-12 col-lg-12">
       {{project.name}}
+      <div class="back" routerLink="/" fxShow.xs="false">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
     </div>
   </div>
 
