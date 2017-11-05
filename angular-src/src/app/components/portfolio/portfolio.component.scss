@@ -1,0 +1,35 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './src/vars';
+
+.container {
+  font-family: 'Play', sans-serif;
+  color: $secondary-color;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.preview {
+  object-fit: cover;
+  object-position: top;
+  max-height: 250px;
+  height: 250px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  margin: 10px;
+}
+
+.card {
+  color: $main-color;
+  margin-bottom: 16px;
+  text-align: center;
+
+  .card-text {
+    font-size: 16px;
+  }
+}

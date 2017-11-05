@@ -1,0 +1,54 @@
+<div class="container" id="portfolio" (window:keydown.ArrowLeft)="previous()" (window:keydown.ArrowRight)="next()" (touchstart)="swipe($event, 'start')"
+  (touchend)="swipe($event, 'end')">
+
+
+  <div class="back" routerLink="/">
+    <i class="fa fa-times" aria-hidden="true"></i>
+  </div>
+
+  <div class="row justify-content-center title">
+    <div class="col-xs-12">
+      {{project.name}}
+    </div>
+  </div>
+
+  <div class="row justify-content-center description">
+    <div class="col-xs-12">
+      {{project.subProjects[viewSubProject].description}}
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-xs-12 img-box">
+      <div class="nav-button left" *ngIf="this.viewSubProject !== 0">
+        <i class="fa fa-arrow-circle-left" aria-hidden="true" (click)="previous()"></i>
+      </div>
+
+      <div class="progress" *ngIf="isLoadingImg" style="height: 5px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+          aria-valuemax="100" style="width: 100%"></div>
+      </div>
+
+      <img class="img-fluid" src="/assets/projects/{{project.subProjects[viewSubProject].image}}" (load)="onLoad()" />
+
+      <div class="nav-button right" *ngIf="this.viewSubProject !== this.project.subProjects.length - 1">
+        <i class="fa fa-arrow-circle-right" aria-hidden="true" (click)="next()"></i>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center sites">
+    <div class="btn-group" role="group">
+      <a [href]="project.subProjects[viewSubProject].url" target="_blank" class="btn btn-light btn-sm" *ngIf="project.subProjects[viewSubProject].url">View Project</a>
+
+      <a [href]="project.subProjects[viewSubProject].sourceCode" target="_blank" class="btn btn-light btn-sm" *ngIf="project.subProjects[viewSubProject].sourceCode">View Source Code</a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-xs-12">
+      <span class="badge badge-dark" *ngFor="let skill of project.skills">{{skill}}</span>
+      <span class="badge badge-dark" *ngFor="let skill of project.subProjects[viewSubProject].skills">{{skill}}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,93 @@
+@import './src/vars';
+
+.flex-container {
+  height: calc(100%);
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.footer {
+    margin-top: 20px;
+    height: 16px;
+    font-size: 10px;
+    a,
+    a:visited {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+      &:hover {
+        color: darken($secondary-color, 20%);
+      }
+    }
+  }
+  .name {
+    margin: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 40px;
+  }
+  .dots {
+    font-size: 12px;
+    i {
+      margin: 0px 12px;
+    }
+  }
+  .description {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+  }
+
+  .social {
+    a,
+    a:visited {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+      &:hover {
+        color: darken($secondary-color, 20%);
+      }
+    }
+    i {
+      margin: 8px;
+    }
+  }
+
+  .navigation {
+    margin-top: 64px;
+    button {
+      margin: 10px;
+      color: $main-color;
+    }
+  }
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  margin: 0px;
+
+  .icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+.flex-item {
+  margin: 10px;
+  //line-height: 20px;
+  color: $secondary-color;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
