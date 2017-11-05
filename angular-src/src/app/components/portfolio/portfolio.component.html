@@ -9,7 +9,7 @@
         <div class="card-body">
           <h4 class="card-title">{{project.name}}</h4>
           <p class="card-text">{{project.description}}</p>
-          <a [routerLink]="['/portfolio', project.id]" class="btn btn-secondary btn-sm btn-block">View details</a>
+          <a [routerLink]="['/portfolio', project.id]" class="btn btn-secondary btn-sm btn-block">View more</a>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
     <nav aria-label="Page navigation">
       <ul class="pagination">
         <li class="page-item" [class.active]="page==i" *ngFor="let item of pages; let i = index">
-          <button class="page-link" (click)="page=i">{{i+1}}</button>
+          <button class="page-link" (click)="page=i;"  [ngx-scroll-to]="'portfolio'" >{{i+1}}</button>
         </li>
       </ul>
     </nav>
