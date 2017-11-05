@@ -22,7 +22,7 @@ export class ProjectComponent implements OnInit {
   private swipeCoord?: [number, number];
   private swipeTime?: number;
 
-  private isLoadingImg = true;
+  public isLoadingImg = true;
 
   constructor(
     private _projectsService: ProjectsService,
