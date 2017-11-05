@@ -67,8 +67,8 @@ export class ProjectsService {
     };
 
     const fccReact: Project = {
-      id: 'fccAPIs',
-      name: 'FreeCodeCamp APIs',
+      id: 'fccReact',
+      name: 'FreeCodeCamp ReactJS',
       description:
         'Applications developed with ReactJS for the FreeCodeCamp Data Visualization certification.',
       subProjects: [
@@ -123,7 +123,7 @@ export class ProjectsService {
     };
 
     const fccAPIs: Project = {
-      id: 'fccReact',
+      id: 'fccAPIs',
       name: 'FreeCodeCamp APIs',
       description:
         'APIs applications developed with ExpressJS for the FreeCodeCamp Back End certification.',
