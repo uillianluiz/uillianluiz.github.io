@@ -13,7 +13,6 @@ import * as _ from 'lodash';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  public page = 0;
   public pageLoaded = -1;
   public projectItems = null;
 
@@ -33,6 +32,14 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  get page(){
+    return this._projectsService.page;
+  }
+
+  set page(page){
+    this._projectsService.page = page;
+  }
 
   get pages() {
     return Array(Math.ceil(this._projectsService.projects.length / 6)).fill(1);

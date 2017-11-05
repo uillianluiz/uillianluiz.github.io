@@ -19,6 +19,7 @@ export interface Project {
 @Injectable()
 export class ProjectsService {
   public projects: Project[] = [];
+  public page = 0;
 
   constructor() {
     this.buildProjects();
