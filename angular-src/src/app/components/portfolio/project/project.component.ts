@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import 'rxjs/Rx';
 import { Observable } from 'rxjs/Rx';
 import { ProjectsService } from '../../../services/projects.service';
 import * as _ from 'lodash';
