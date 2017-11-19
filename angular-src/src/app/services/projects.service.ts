@@ -26,6 +26,95 @@ export class ProjectsService {
   }
 
   buildProjects() {
+    const ciapa: Project = {
+      id: 'ciapa',
+      name: 'CIAPA',
+      description:
+        'CIAPA is placement algorithm for multi-tier applications built as part of my masters in Computer Science.',
+      subProjects: [
+        {
+          image: 'ciapa_tiers.png',
+          description:
+            'Screen where users may view and add all applications tiers.',
+          url: 'https://uillianluiz.github.io/ciapa/',
+          sourceCode: 'https://github.com/uillianluiz/ciapa'
+        },
+        {
+          image: 'ciapa_tiers_edit.png',
+          description:
+            'Screen that allows users to modify the tiers parameters, including size, interference and affinity levels.',
+          url: 'https://uillianluiz.github.io/ciapa/',
+          sourceCode: 'https://github.com/uillianluiz/ciapa'
+        },
+        {
+          image: 'ciapa_placement_settings.png',
+          description:
+            'Screen that allows users to configure the placement parameters.',
+          url: 'https://uillianluiz.github.io/ciapa/',
+          sourceCode: 'https://github.com/uillianluiz/ciapa'
+        },
+        {
+          image: 'ciapa_placement.png',
+          description:
+            'Screen that exemplifies the return of the placement algorithm, allowing users to view and export the configurations.',
+          url: 'https://uillianluiz.github.io/ciapa/',
+          sourceCode: 'https://github.com/uillianluiz/ciapa'
+        }
+      ],
+      skills: [
+        'Heuristics',
+        'Performance',
+        'Cloud Computing',
+        'Resource Interference',
+        'Network Affinity',
+        'Angular',
+        'ExpressJS',
+        'TypeScript',
+        'Clarity UI',
+        'GitHub',
+        'Chart.js'
+      ]
+    };
+
+    const masters: Project = {
+      id: 'masters',
+      name: 'Masters in CS',
+      description:
+        'Some of other relevant projects and papers done during my masters in Computer Science.',
+      subProjects: [
+        {
+          image: 'masters_wscad.png',
+          description:
+            'Paper published at WSCAD 2017 about policies for smart placement of multi-tier applications.',
+          url:
+            'https://portaldeconteudo.sbc.org.br/index.php/wscad/article/view/252',
+          skills: [
+            'Multi-tier applications',
+            'Cloud Computing',
+            'Performance Interference',
+            'Network Affinity',
+            'Research',
+            'English Writing'
+          ]
+        },
+        {
+          image: 'masters_nodetiers.png',
+          description:
+            'A benchmark built to simulate several types of multi-tier applications.',
+          sourceCode: 'https://github.com/uillianluiz/node-tiers',
+          skills: ['Node.js', 'Typescript', 'Benchmarking', 'Performance', 'Stress Test']
+        },
+        {
+          image: 'masters_rubis.png',
+          description:
+            'Updated version of a widely used benchmark in the academia called RUBiS.',
+          sourceCode: 'https://github.com/uillianluiz/rubis',
+          skills: ['PHP', 'MySQL', 'Java', 'Python', 'Performance']
+        }
+      ],
+      skills: []
+    };
+
     const fccFullStack: Project = {
       id: 'fccFullStack',
       name: 'FreeCodeCamp Full Stack',
@@ -417,6 +506,8 @@ export class ProjectsService {
       skills: ['PHP', 'JavaScript', 'MySQL', 'CMS', 'CSS']
     };
 
+    this.projects.push(ciapa);
+    this.projects.push(masters);
     this.projects.push(fccFullStack);
     this.projects.push(fccReact);
     this.projects.push(fccAPIs);
