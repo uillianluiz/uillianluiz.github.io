@@ -21,14 +21,14 @@ export class PortfolioComponent implements OnInit {
     private _router: Router,
     private _scrollToService: ScrollToService
   ) {
-    if (this._router.url === '/portfolio') {
+   /*  if (this._router.url === '/projects') {
       const config: ScrollToConfigOptions = {
         target: 'portfolio',
         duration: 1000
       };
 
       this._scrollToService.scrollTo(config);
-    }
+    } */
   }
 
   ngOnInit() {}

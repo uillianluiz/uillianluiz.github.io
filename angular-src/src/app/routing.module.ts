@@ -8,8 +8,8 @@ import { ProjectComponent } from './components/portfolio/project/project.compone
 const routes: Routes = [
   { path: '', component: WelcomeComponent , data: { state: 'home'}},
   // { path: 'resume', component: ResumeComponent, data: { state: 'resume'} },
-  { path: 'portfolio', component: PortfolioComponent , data: { state: 'portfolio'}},
-  { path: 'portfolio/:project', component: ProjectComponent , data: { state: 'project'}},
+  { path: 'projects', component: PortfolioComponent , data: { state: 'portfolio'}},
+  { path: 'projects/:project', component: ProjectComponent , data: { state: 'project'}},
   { path: '**', redirectTo: '/' }
 ];
 
