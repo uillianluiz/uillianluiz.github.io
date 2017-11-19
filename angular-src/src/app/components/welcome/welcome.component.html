@@ -1,47 +1,49 @@
-<div class="flex-container" id="welcome">
-  <div class="row">
-    <div class="flex-item name">
-      Uillian
-      <span fxShow.xs="false">Luiz</span>
-      Ludwig
-    </div>
+<div class="wrapper">
 
-    <div class="flex-item dots">
-      <i *ngFor="let number of [0,1,2,3,4,5,6]" class="fa fa-circle-o" aria-hidden="true"></i>
-    </div>
+  <div class="flex-container" id="welcome">
+    <div class="row">
+      <div class="flex-item name">
+        Uillian
+        <span fxShow.xs="false">Luiz</span>
+        Ludwig
+      </div>
 
-    <div class="flex-item description">
-      Software Developer
-    </div>
+      <div class="flex-item dots">
+        <i *ngFor="let number of [0,1,2,3,4,5,6]" class="fa fa-circle-o" aria-hidden="true"></i>
+      </div>
 
-    <div class="flex-item dots">
-      <i *ngFor="let number of [0,1,2,3,4,5,6]" class="fa fa-circle-o" aria-hidden="true"></i>
-    </div>
+      <div class="flex-item description">
+        Software Developer
+      </div>
 
-    <div class="flex-item social">
-      <a href="https://www.linkedin.com/in/uillian/" title="Linkedin">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.facebook.com/Uillian" title="Facebook">
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com/uillianluiz" title="GitHub">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="http://codepen.io/uillianluiz/" title="CodePen">
-        <i class="fa fa-codepen" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.freecodecamp.com/uillianluiz" title="FreeCodeCamp">
-        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-      </a>
+      <div class="flex-item dots">
+        <i *ngFor="let number of [0,1,2,3,4,5,6]" class="fa fa-circle-o" aria-hidden="true"></i>
+      </div>
 
-    </div>
-    <div class="flex-item navigation">
+      <div class="flex-item social">
+        <a href="https://www.linkedin.com/in/uillian/" title="Linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/Uillian" title="Facebook">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/uillianluiz" title="GitHub">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="http://codepen.io/uillianluiz/" title="CodePen">
+          <i class="fa fa-codepen" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.freecodecamp.com/uillianluiz" title="FreeCodeCamp">
+          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+        </a>
 
-      <a mat-raised-button href="/assets/UillianLudwig.pdf">Resume</a>
-      <button mat-raised-button [ngx-scroll-to]="'portfolio'" ngx-scroll-to-duration="1000">Portfolio</button>
+      </div>
+      <div class="flex-item navigation">
+
+        <a mat-raised-button href="/assets/UillianLudwig.pdf">Resume</a>
+        <button mat-raised-button routerLink='/portfolio'>Portfolio</button>
+      </div>
     </div>
   </div>
-</div>
 
-<router-outlet></router-outlet>
+</div>

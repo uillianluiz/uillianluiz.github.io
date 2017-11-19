@@ -6,10 +6,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ProjectComponent } from './components/portfolio/project/project.component';
 
 const routes: Routes = [
-  { path: '', component: PortfolioComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'portfolio/:project', component: ProjectComponent },
+  { path: '', component: WelcomeComponent , data: { state: 'home'}},
+  // { path: 'resume', component: ResumeComponent, data: { state: 'resume'} },
+  { path: 'portfolio', component: PortfolioComponent , data: { state: 'portfolio'}},
+  { path: 'portfolio/:project', component: ProjectComponent , data: { state: 'project'}},
   { path: '**', redirectTo: '/' }
 ];
 

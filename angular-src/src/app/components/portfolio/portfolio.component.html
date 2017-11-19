@@ -1,4 +1,9 @@
 <div class="container" id="portfolio">
+  <div class="row justify-content-center title nav">
+    <span class="back" routerLink="/" title="Go back to Home">
+      <i class="fa fa-home" aria-hidden="true"></i>
+    </span>
+  </div>
   <div class="row justify-content-center title">
     Portfolio
   </div>
@@ -20,7 +25,7 @@
     <nav aria-label="Page navigation">
       <ul class="pagination">
         <li class="page-item" [class.active]="page==i" *ngFor="let item of pages; let i = index">
-          <button class="page-link" (click)="page=i;"  [ngx-scroll-to]="'portfolio'" >{{i+1}}</button>
+          <button class="page-link" (click)="page=i;" [ngx-scroll-to]="'portfolio'">{{i+1}}</button>
         </li>
       </ul>
     </nav>

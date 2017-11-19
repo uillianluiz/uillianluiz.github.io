@@ -4,6 +4,7 @@
 .container {
   font-family: 'Play', sans-serif;
   color: $secondary-color;
+  overflow: hidden;
 }
 
 .clickable {
@@ -12,8 +13,8 @@
 .preview {
   object-fit: cover;
   object-position: top;
-  max-height: 220px;
-  height: 220px;
+  max-height: 205px;
+  height: 205px;
   width: 100%;
   cursor: pointer;
 }
@@ -21,7 +22,15 @@
 .title {
   font-weight: 500;
   font-size: 32px;
-  margin: 10px;
+  padding-top: 5px;
+}
+
+.back {
+  font-size: 40px;
+  cursor: pointer;
+  &:hover {
+    color: darken($secondary-color, 20%);
+  }
 }
 
 .card {
