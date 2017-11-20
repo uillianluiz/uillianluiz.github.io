@@ -68,7 +68,6 @@ export class ProjectsService {
         'Resource Interference',
         'Network Affinity',
         'Angular',
-        'ExpressJS',
         'TypeScript',
         'Clarity UI',
         'GitHub',
@@ -80,7 +79,7 @@ export class ProjectsService {
       id: 'masters',
       name: 'Masters in CS',
       description:
-        'Some of other relevant projects and papers done during my masters in Computer Science.',
+        'Relevant projects and papers done during my masters in Computer Science at PUCRS.',
       subProjects: [
         {
           image: 'masters_wscad.png',
