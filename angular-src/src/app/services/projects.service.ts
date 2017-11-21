@@ -129,6 +129,14 @@ export class ProjectsService {
           skills: ['MongoDB', 'PassportJS', 'Chart.js']
         },
         {
+          image: 'fcc_back_pinterest.png',
+          description:
+            'Pinterest clone, where users can add their favorite pictures and it is viewed in a wall.',
+          url: 'https://ul-pinterest.herokuapp.com/',
+          sourceCode: 'https://github.com/uillianluiz/pinterest-clone',
+          skills: ['MongoDB', 'PassportJS']
+        },
+        {
           image: 'fcc_back_nightlife.png',
           description:
             'NightLife coordinator app, which allows the search for nearby bars and restaurants, listing how many people are going there.',
