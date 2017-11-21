@@ -18,6 +18,8 @@ export class ProjectComponent implements OnInit {
   private projectId: string = null;
   public viewSubProject = 0;
 
+  public startFrom = 'left';
+
   private swipeCoord?: [number, number];
   private swipeTime?: number;
 
@@ -37,6 +39,11 @@ export class ProjectComponent implements OnInit {
     this._scrollToService.scrollTo(config);
 
     this.projectId = this._route.snapshot.params['project'];
+    this._route.params.subscribe(params => {
+      this.projectId = params['project'];
+      this.index = null;
+      this.isLoadingImg = true;
+    });
   }
 
   ngOnInit() {}
@@ -45,19 +52,40 @@ export class ProjectComponent implements OnInit {
     if (!this.projectId) {
       return null;
     }
-    if (!this.index) {
+
+    if (this.index == null) {
       this.index = _.findIndex(this._projectsService.projects, project => {
         return project.id === this.projectId;
       });
+
+      setTimeout(() => {
+        if (this.startFrom === 'left') {
+          this.viewSubProject = 0;
+        } else {
+          this.viewSubProject =
+            this._projectsService.projects[this.index].subProjects.length - 1;
+        }
+      }, 1);
     }
     if (this.index === -1) {
       return null;
     }
+
     return this._projectsService.projects[this.index];
   }
 
   next() {
     if (this.viewSubProject === this.project.subProjects.length - 1) {
+      if (this.index + 1 >= this._projectsService.projects.length) {
+        this._router.navigate(['/projects']);
+      } else {
+        this._router.navigate([
+          '/projects/',
+          this._projectsService.projects[this.index + 1].id
+        ]);
+
+        this.startFrom = 'left';
+      }
       return;
     }
     this.isLoadingImg = true;
@@ -66,6 +94,16 @@ export class ProjectComponent implements OnInit {
 
   previous() {
     if (this.viewSubProject === 0) {
+      if (this.index === 0) {
+        this._router.navigate(['/projects']);
+      } else {
+        this._router.navigate([
+          '/projects/',
+          this._projectsService.projects[this.index - 1].id
+        ]);
+
+        this.startFrom = 'right';
+      }
       return;
     }
     this.isLoadingImg = true;

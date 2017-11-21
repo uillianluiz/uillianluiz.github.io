@@ -1,5 +1,5 @@
 <div class="container" id="portfolio" (window:keydown.ArrowLeft)="previous()" (window:keydown.ArrowRight)="next()" (touchstart)="swipe($event, 'start')"
-  (touchend)="swipe($event, 'end')">
+  (touchend)="swipe($event, 'end')" *ngIf="project.subProjects[viewSubProject]">
 
 
   <!--   <div fxHide.gt-xs="true">
@@ -31,7 +31,7 @@
   </div>
   <div class="row justify-content-center row-img">
     <div class="col-xs-12 img-box">
-      <div class="nav-button left" *ngIf="this.viewSubProject !== 0">
+      <div class="nav-button left">
         <i class="fa fa-arrow-circle-left" aria-hidden="true" (click)="previous()"></i>
       </div>
 
@@ -42,7 +42,7 @@
 
       <img class="img-fluid" src="/assets/projects/{{project.subProjects[viewSubProject].image}}" (load)="onLoad()" />
 
-      <div class="nav-button right" *ngIf="this.viewSubProject !== this.project.subProjects.length - 1">
+      <div class="nav-button right">
         <i class="fa fa-arrow-circle-right" aria-hidden="true" (click)="next()"></i>
       </div>
       <div class="overlay"></div>
