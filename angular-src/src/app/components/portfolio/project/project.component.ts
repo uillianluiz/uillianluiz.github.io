@@ -75,6 +75,9 @@ export class ProjectComponent implements OnInit {
   }
 
   next() {
+    if (this.isLoadingImg) {
+      return;
+    }
     if (this.viewSubProject === this.project.subProjects.length - 1) {
       if (this.index + 1 >= this._projectsService.projects.length) {
         this._router.navigate(['/projects']);
@@ -93,6 +96,9 @@ export class ProjectComponent implements OnInit {
   }
 
   previous() {
+    if (this.isLoadingImg) {
+      return;
+    }
     if (this.viewSubProject === 0) {
       if (this.index === 0) {
         this._router.navigate(['/projects']);
