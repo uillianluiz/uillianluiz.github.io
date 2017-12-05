@@ -26,6 +26,39 @@ export class ProjectsService {
   }
 
   buildProjects() {
+
+    const classModel: Project = {
+      id: 'classModel',
+      name: 'Class Modeler',
+      description:
+        'Class Modeler is a web app that allows users to model projects using UML class diagrams.',
+      subProjects: [
+        {
+          image: 'class_modeler.png',
+          description:
+            'Screen that allows users to model the projects, adding and editing elements.'
+        },
+        {
+          image: 'class_modeler_hidden_tools.png',
+          description:
+            'Modeling screen with hidden toolbar.'
+        },
+        {
+          image: 'class_modeler_front.png',
+          description:
+            'Projects screen, which displays all projects created and allows to create new projects.'
+        }
+      ],
+      skills: [
+        'ExpressJS',
+        'MongoDB',
+        'Passport.js',
+        'Angular',
+        'TypeScript',
+        'Clarity UI'
+      ]
+    };
+
     const ciapa: Project = {
       id: 'ciapa',
       name: 'CIAPA',
@@ -513,6 +546,7 @@ export class ProjectsService {
       skills: ['PHP', 'JavaScript', 'MySQL', 'CMS', 'CSS']
     };
 
+    this.projects.push(classModel);
     this.projects.push(ciapa);
     this.projects.push(masters);
     this.projects.push(fccFullStack);
