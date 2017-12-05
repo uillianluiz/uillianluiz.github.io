@@ -29,9 +29,9 @@ export class ProjectsService {
 
     const classModel: Project = {
       id: 'classModel',
-      name: 'Class Modeler',
+      name: 'UML Class Modeler',
       description:
-        'Class Modeler is a web app that allows users to model projects using UML class diagrams.',
+        'UML Class Modeler is a web app that allows users to model projects using UML class diagrams.',
       subProjects: [
         {
           image: 'class_modeler.png',
