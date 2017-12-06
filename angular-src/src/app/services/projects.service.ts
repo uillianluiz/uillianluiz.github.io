@@ -164,7 +164,7 @@ export class ProjectsService {
         {
           image: 'fcc_back_pinterest.png',
           description:
-            'Pinterest clone, where users can add their favorite pictures and it is viewed in a wall.',
+            'Pinterest clone, where users can add their favorite pictures and they are viewed in a wall.',
           url: 'https://ul-pinterest.herokuapp.com/',
           sourceCode: 'https://github.com/uillianluiz/pinterest-clone',
           skills: ['MongoDB', 'PassportJS']
@@ -486,6 +486,19 @@ export class ProjectsService {
           description:
             'Android game where you have to guess the right name of the player.',
           skills: ['Android', 'SQLite', 'Java', 'Achievements']
+        },
+        {
+          image: 'unkapps_bfsites.png',
+          description:
+            'React native Android app that lists the most recent posts for the game Brasfoot.',
+          skills: ['Android', 'React Native'],
+          url: 'https://play.google.com/store/apps/details?id=com.unkapps.bfsites'
+        },
+        {
+          image: 'unkapps_bill.png',
+          description:
+            'React native Android app allows users to split the bill between multiple people.',
+          skills: ['Android', 'React Native']
         }
       ],
       skills: []
@@ -553,9 +566,9 @@ export class ProjectsService {
     this.projects.push(fccReact);
     this.projects.push(fccAPIs);
     this.projects.push(fccFrontEnd);
+    this.projects.push(unkapps);
     this.projects.push(mundobf);
     this.projects.push(onibusrs);
-    this.projects.push(unkapps);
     this.projects.push(webCsb);
     this.projects.push(ufpel);
     this.projects.push(nettoJunior);
