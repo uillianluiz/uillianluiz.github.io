@@ -35,12 +35,16 @@
         <i class="fa fa-arrow-circle-left" aria-hidden="true" (click)="previous()"></i>
       </div>
 
-      <div class="progress" *ngIf="isLoadingImg" style="height: 5px;">
+      <!--       <div class="progress" *ngIf="isLoadingImg" style="height: 5px;">
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0"
           aria-valuemax="100" style="width: 100%"></div>
-      </div>
+      </div> -->
 
       <img class="img-fluid" src="/assets/projects/{{project.subProjects[viewSubProject].image}}" (load)="onLoad()" />
+
+      <div class="nav-button center" *ngIf="isLoadingImg">
+        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+      </div>
 
       <div class="nav-button right">
         <i class="fa fa-arrow-circle-right" aria-hidden="true" (click)="next()"></i>

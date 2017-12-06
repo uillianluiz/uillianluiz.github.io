@@ -104,6 +104,13 @@
     &.left {
       left: 2%;
     }
+
+    &.center {
+      left: calc(50% - 40px);
+      opacity: 1 !important;
+      color: $main-color !important;
+    }
+
     &.right {
       left: calc(100% - 40px);
     }
