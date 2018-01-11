@@ -39,6 +39,11 @@ export class ProjectsService {
             'Screen that allows users to model the projects, adding and editing elements.'
         },
         {
+          image: 'class_modeler_demo.gif',
+          description:
+            'Demonstration of the application working while creating and modifying elements .'
+        },
+        {
           image: 'class_modeler_hidden_tools.png',
           description:
             'Modeling screen with hidden toolbar.'
